@@ -1,0 +1,7 @@
+kubectl get hpa -w
+NAME                      REFERENCE             TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+scalable-pod-identifier   Deployment/test-app   memory: 26%/80%   1         10        1          82s
+
+kubectl get hpa
+NAME                      REFERENCE             TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+scalable-pod-identifier   Deployment/test-app   memory: 89%/80%   1         10        2          19m
